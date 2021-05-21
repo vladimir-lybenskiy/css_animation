@@ -1,0 +1,38 @@
+body{
+ background-image: url(images/cosmos.jpg);
+ background-size: cover;
+ }
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing:border-box;
+ }
+
+#earth {padding-left: 145px;
+	padding-top: 100px;
+	padding: 150px;
+	position: relative;
+ z-index: 1;
+ transform: rotate(360deg);
+/*Тут будуть параметри Землі */
+ }
+ #moon {
+ 	position: absolute;
+ top: 250px;
+ left: 350px;
+animation:5s orbita linear infinite;*/
+z-index: 1;
+ transform: rotate(360deg);
+
+
+/*Тут будуть параметри Місяця */
+ }
+ @keyframes orbita {
+ 0% {width: 110px;}
+ 25% {top:105px;left:720px;z-index:2;width: 135px;}
+
+ 50% {top:300px; left:300px;width: 170px;}
+ 75% {top:450px; left:0px;width: 125px;  }
+ 100% {transofm:rotate(360deg);z-index: 0;width: 110px;}
+ }
